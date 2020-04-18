@@ -18,6 +18,7 @@ def kmp_search(pattern, message):
     # Create lps[]
     lps = [0] * m
 
+    # It keeps the currently matched length
     j = 0  # Index at for pat[]
 
     compute_lps_array(pattern, m, lps)
