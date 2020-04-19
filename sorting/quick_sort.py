@@ -7,7 +7,7 @@ def partition(arr, low, high):
     swap(arr, pivot, high)
 
     for i in range(low, high):
-        if arr[i] <= arr[high]:
+        if arr[i] < arr[high]:
             swap(arr, i, low)
             low += 1
 
@@ -24,6 +24,6 @@ def quick_sort(arr, lb, ub):
 
 
 if __name__ == '__main__':
-    arr = [10, 50, 60, 40, 30, 20, 70, 90, 80, 0]
+    arr = [10, 50, 60, 40, 30, 20, 70, 90, 80, 0, 10]
     quick_sort(arr, 0, len(arr) - 1)
     print(arr)
