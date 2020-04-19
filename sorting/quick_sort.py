@@ -24,6 +24,6 @@ def quick_sort(arr, lb, ub):
 
 
 if __name__ == '__main__':
-    arr = [10, 50, 60, 40, 30, 20, 70, 90, 80, 0, 10]
+    arr = [10, 50, 60, 40, 30, 20, 70, 90, 80, 0, 1]
     quick_sort(arr, 0, len(arr) - 1)
     print(arr)
