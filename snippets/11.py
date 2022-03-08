@@ -14,3 +14,8 @@ import sys
 
 print(sys.version)
 
+print(sys.path)
+"""
+sys.path is a built-in variable within the sys module. It contains a list of directories that the interpreter will search in for the required module. 
+"""
+
